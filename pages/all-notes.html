@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme_color" content="#5285F4" />
+    <title>Practica 7</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mis Notas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">La yoce</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/pages/all-notes.html">Mis Notas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/recent.html">Mas Recientes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">PWA</a></li>
+                                <li><a class="dropdown-item" href="#">Desarrollo Móvil Integral</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#"></a>Software</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container pt-5">
+        <hr>
+        <h3 class="text-primary">Todas mis notas</h3>
+        <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                    <img src="https://dam.cocinafacil.com.mx/wp-content/uploads/2019/12/cena-navidena.jpg" class="img-fluid rounded" alt="">
+                </div>
+                    <div class="col text-truncate">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam architecto rerum libero incidunt debitis? Alias, ex eius. Ipsa tempore cum, perspiciatis fuga alias dignissimos magnam delectus quasi doloribus nisi numquam.
+                   
+                </div>
+                </div>
+              </div>
+              </div>
+
+              <div class="card mt-2">
+                <div class="card-body">
+                  <div class="row">
+                        <div class="col text-truncate">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam architecto rerum libero incidunt debitis? Alias, ex eius. Ipsa tempore cum, perspiciatis fuga alias dignissimos magnam delectus quasi doloribus nisi numquam.
+                       
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+            </div>
+          </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script>
+
+if(navigator.serviceWorker){
+    let url = window.location;
+    if(url.toString().includes('localhost:8080')){
+        navigator.serviceWorker.register('/sw.js');
+    }else{
+        navigator.serviceWorker.register('https://evelynbahena7u7.github.io/practica07/sw.js');
+    }
+    
+}
+    </script>
+
+</body>
+
+</html>
