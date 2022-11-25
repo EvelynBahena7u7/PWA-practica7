@@ -4,21 +4,21 @@ const DYNAMIC_CACHE_NAME = 'dynamic-cache-v1.1';
 
 self.addEventListener('install', (event) => {
     const respCache = caches.open(STATIC_CACHE_NAME).then((cache) => {
-        cache.add('https://evelynbahena7u7.github.io/PWA-Practica7/');
-        cache.add('https://evelynbahena7u7.github.io/PWA-Practica7/index.html');
-        cache.add('https://evelynbahena7u7.github.io/PWA-Practica7/pages/all-notes.html');
-        cache.add('https://evelynbahena7u7.github.io/PWA-Practica7/pages/offline.html');
-        cache.add('https://evelynbahena7u7.github.io/PWA-Practica7/pages/recent.html');
-        cache.add('https://evelynbahena7u7.github.io/PWA-Practica7/js/app.js');
-        cache.add('https://evelynbahena7u7.github.io/PWA-Practica7/js/firebase.js');
-        cache.add('https://evelynbahena7u7.github.io/PWA-Practica7/js/firebase-functions.js');
+        cache.add('https://evelynbahena7u7.github.io/PWA-practica7/');
+        cache.add('https://evelynbahena7u7.github.io/PWA-practica7/index.html');
+        cache.add('https://evelynbahena7u7.github.io/PWA-practica7/pages/all-notes.html');
+        cache.add('https://evelynbahena7u7.github.io/PWA-practica7/pages/offline.html');
+        cache.add('https://evelynbahena7u7.github.io/PWA-practica7/pages/recent.html');
+        cache.add('https://evelynbahena7u7.github.io/PWA-practica7/js/app.js');
+        cache.add('https://evelynbahena7u7.github.io/PWA-practica7/js/firebase.js');
+        cache.add('https://evelynbahena7u7.github.io/PWA-practica7/js/firebase-functions.js');
         cache.add('images/icons/android-launchericon-48-48.png');
         cache.add('images/icons/android-launchericon-72-72.png');
         cache.add('images/icons/android-launchericon-96-96.png');
         cache.add('images/icons/android-launchericon-144-144.png');
         cache.add('images/icons/android-launchericon-192-192.png');
         cache.add('images/icons/android-launchericon-512-512.png');
-        cache.add('https://evelynbahena7u7.github.io/PWA-Practica7/manifest.json');
+        cache.add('https://evelynbahena7u7.github.io/PWA-practica7/manifest.json');
     });
     const respCacheInmutable = caches.open(INMUTABLE_CACHE_NAME).then((cache) => {
       return cache.addAll([
