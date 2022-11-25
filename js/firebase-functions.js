@@ -11,7 +11,7 @@ import {
   orderBy,
 } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js";
 import {} from "https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js";
-import { app } from "/js/firebase.js";
+import { app } from "https://evelynbahena7u7.github.io/PWA-practica7/js/firebase.js";
 
 const db = getFirestore(app);
 
