@@ -22,8 +22,11 @@ self.addEventListener('install', (event) => {
     });
     const respCacheInmutable = caches.open(INMUTABLE_CACHE_NAME).then((cache) => {
       return cache.addAll([
+        'https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css',
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css',
         'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css',
-        'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js',
+        'https://cdn.jsdelivr.net/npm/toastify-js',
+        'https://evelynbahena7u7.github.io/PWA-practica7/js/app.js',
         'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js'
       ]);
     });
