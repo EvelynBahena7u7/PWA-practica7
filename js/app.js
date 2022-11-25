@@ -2,7 +2,7 @@
 //     navigator.serviceWorker.register("./sw.js");
 // }
 
-import { getAllNoteFire, createNoteFire } from "/js/firebase-functions.js";
+import { getAllNoteFire, createNoteFire } from "https://evelynbahena7u7.github.io/PWA-practica7/js/firebase-functions.js";
 
 const getAllNotes = () => {
   getAllNoteFire();
